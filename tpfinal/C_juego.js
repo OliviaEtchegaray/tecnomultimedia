@@ -40,7 +40,7 @@ class Juego {
     
      if (this.Zapato.y > height) {
       console.log("¡Zapato debajo de y!");
-      this.estado = "18"; // Cambiar al estado 18
+      this.estado = "18"; 
       noLoop();
     }
 
@@ -48,7 +48,7 @@ class Juego {
         this.juego = new Juego(this.imgArray, this.pngArray);
         this.juego.iniciar();
     } else if (this.estado !== "jugando" && this.juego) {
-        this.juego = null; // Eliminar la instancia del juego cuando no estamos en el estado "jugando"
-        loop(); // Reanudar el bucle de dibujo
+        this.juego = null; 
+        loop(); 
     }
   }}
